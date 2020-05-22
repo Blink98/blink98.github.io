@@ -1,0 +1,352 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    outline: none !important;
+    font-family: Roboto;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+
+/* -------------Variables---------------- */
+:root {
+    --primary-colour: linear-gradient(180deg, #00D2DF 0%, #0074E1 100%);
+    --secondary-colour: linear-gradient(180deg, #00D2DF 0%, #0074E1 100%);
+    --secondary-colour-hover: linear-gradient(180deg, rgb(0, 210, 223, 0.9) 0%, rgb(0, 116, 225, 0.9) 100%);
+    --color-for-text: #00A3E0;;
+}
+/* -------------Variables---------------- */
+
+
+
+/* ---------- Global Css ---------- */
+.intro-section div, .vision-section div, .contact-section div {
+    margin: auto;
+}
+
+/* For Capcha */
+.g-recaptcha {
+    transform:scale(0.8);
+    transform-origin:0 0;
+}
+/* For Capcha */
+
+.container {
+    padding: 0 !important;
+}
+/* ---------- Global Css ---------- */
+
+/* Navigation Bar */
+header {
+    z-index: 999;
+    box-shadow: 0px 1px 40px rgba(0, 0, 0, 0.12);
+}
+
+    header nav a img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+
+    header nav ul ,.nav-link.btn {
+        font-size: 1.5rem;
+        display: block;
+    }
+
+        header nav ul li a {
+            margin: 0.7rem auto ;
+            text-align: center;
+        }
+
+        header nav ul li a:hover, header nav ul li a:focus {
+            color: var(--color-for-text) !important;
+        }
+
+            .nav-link.btn, .intro-btn.btn {
+                border: none !important;
+                border-radius: 50px !important;
+                margin: 1rem auto 2rem;
+                padding: 0.5em 1.18em !important;
+                color: rgb(255, 255, 255) !important;
+                background: var(--secondary-colour);
+                width: fit-content;
+            }
+
+            .nav-link.btn:hover, .intro-btn.btn:hover {
+                background: var(--secondary-colour-hover);
+            }
+
+
+
+/* Intro Section */
+.intro-section {
+    margin: 2rem auto 3rem;
+}
+
+    .intro-section div p {
+        color: rgb(84, 84, 84);
+        color: #6A6A6A !important;
+        font-size: 20px;
+        padding-right: 20px;
+    }
+
+        .intro-section div p span {
+            font-size: 2.4rem !important;
+            font-weight: 600;
+            color: #000000;
+        }
+
+            .intro-section div p span span {
+                background: var(--color-for-text);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-family: 'Roboto', sans-serif;
+            }
+
+    .intro-btn.btn  {
+        margin: 1.6rem auto auto;
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    .intro-section div form button:hover {
+        background: var(--secondary-colour-hover);
+    }
+
+    .intro-section div img {
+        display: block;
+        margin: 2rem auto;
+        width: 80%;
+    }
+
+
+/* Technology Stack Section */
+.tech-section {
+    margin: 3rem auto;
+}
+
+    .tech-section div h2 {
+        font-size: 2.6rem !important;
+        /* color: var(--color-for-text); */
+        background: var(--primary-colour);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 1.3rem;
+        text-align: center;
+    }
+            .img-container {
+                margin: 20px auto;
+                padding: 18px;
+                width: fit-content;
+                width: -moz-fit-content;
+                border-radius: 100%;
+                border: 2px solid var(--color-for-text);
+            }
+
+            .skill-img {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    margin: auto;            
+                }
+
+
+/* Contact Section */
+.contact-section {
+    background: var(--color-for-text);
+    text-align: center;
+    color: #ffffff;
+}
+
+
+    .contact-section div {
+        margin-bottom: 0 !important;
+        padding: 1rem 0 !important;
+    }
+
+        .contact-section h4 {
+            width: 100%;
+            margin: auto;
+            font-size: 2.25em;
+            margin-bottom: 1.3rem;
+        }
+
+        .contact-section div div {
+            padding: 0 !important;
+            width: 100%;
+            max-width: 600px;
+            font-size: 3.6rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+            .contact-section div div a {
+                color: #ffffff;
+                transition: all .2s ease-in-out;
+            }
+
+            .contact-section div div a:hover {
+                transform: scale(1.2);
+                transition: all .2s ease-in-out;
+            }
+
+
+
+/* Footer */
+footer {
+    padding: 3rem;
+    text-align: center;
+}
+
+    footer p {
+        display: block;
+        margin: auto;
+        color: var(--color-for-text);
+    }
+
+
+
+
+
+/* -------------------- Tablet View -------------------- */
+@media (min-width: 576px) /* and (max-width: 767px) */ {
+
+    /* Navbar */
+        .navbar-brand img {        
+            width: 5rem;
+            height: 5rem;
+        }
+
+    .navbar-toggler {
+        margin-right: 20px;
+        transform: scale(1.4);
+    }
+
+    header nav ul li a {
+        font-size: 2rem;
+        /* margin: 1rem auto; */
+    }
+
+    .intro-btn.btn {
+        margin: 1.7rem 0 0
+    }
+
+
+    /* Intro Section */
+    .intro-section {
+        margin: 1rem auto auto;
+    }
+    
+        .intro-section div {
+            margin: auto;
+        }
+
+            .intro-text {
+                padding: 0;
+            }
+
+            .intro-section div img {
+                padding-right: 0;
+            }
+    
+                .intro-section div form button {
+                    margin: 0;
+                }
+    
+            
+    /* Tech Section */
+    .tech-section div h2 {
+        font-size: 3.4rem !important;
+        margin-bottom: 3rem;
+    }
+
+        .img-container  {
+            transform: scale(1.4);
+            margin-bottom: 4rem;            
+        }
+
+    /* Contact Section */
+    .contact-section h4 {
+        font-size: 3rem;
+    }
+
+        .contact-section div div{
+            justify-content: center;
+        }
+
+            .contact-section div div a {
+                margin: 1.6rem;
+            }
+
+    /* Footer */
+    footer p {
+        font-size: 1.4rem;
+    }
+
+}
+
+
+
+
+
+/* -------------------- Laptop View -------------------- */
+@media (min-width: 768px) {
+
+    /* Navbar */
+        .navbar-brand img {        
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+
+    header nav ul li a {
+        font-size: 1.3rem;
+        margin-left: 3.3rem;
+    }
+
+    .nav-link.btn {
+        margin: auto !important; 
+        margin-left: 3.3rem !important;
+        margin-top: 5px !important;
+    }
+
+    .intro-btn.btn {
+        margin: 1.7rem 0 0;
+    }
+
+    /* Intro Section */
+    .intro-section {
+        margin: 0;
+    }
+
+        .intro-text {
+            margin-top: 3rem;
+        }
+
+            .intro-section div div p {
+                margin-top: 2rem;
+                font-size: 1.7rem;
+            }
+
+                .intro-section div div p span {
+                    font-size: 2.7rem !important;
+                }
+
+            .intro-text form {
+                margin-top: 2rem;
+            }
+    
+        .intro-section div img {
+            max-height: 800px;
+        }
+
+
+    /* Contact Section */
+    /* .contact-section div img {
+        max-width: 500px;
+        display: block;
+        margin: 4rem auto auto;
+    } */
+} 
