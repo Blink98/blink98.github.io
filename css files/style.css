@@ -27,6 +27,11 @@ html {
     margin: auto;
 }
 
+/* For 'Data Science Student' and 'Web Developer' */
+strong {
+    color: #000000;
+}
+
 /* For Capcha */
 .g-recaptcha {
     transform:scale(0.8);
@@ -87,7 +92,7 @@ header {
 }
 
     .intro-section div p {
-        color: rgb(84, 84, 84);
+        /* color: rgb(84, 84, 84); */
         color: #6A6A6A !important;
         font-size: 20px;
         padding-right: 20px;
@@ -96,7 +101,7 @@ header {
         .intro-section div p span {
             font-size: 2.4rem !important;
             font-weight: 600;
-            color: #000000;
+            color: #6A6A6A;
         }
 
             .intro-section div p span span {
